@@ -1,0 +1,122 @@
+.hits {
+    min-height: 1200px;
+    padding-bottom: 50px;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__item {
+        width: 23%;
+        height: 300px;
+        &_block {
+            position: relative;
+            &_text {
+                padding-left: 15px;
+            }
+            &_size {
+                margin-top: 15px;
+                margin-bottom: 8px;
+                &_title {
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 14px;
+                    color: #414141;
+                }
+                &_items {
+                    display: flex;
+                    &_item {
+                        margin: 0 17px;
+                        &:first-child {
+                            margin-left: 0;
+                        }
+                        &_name {
+                            font-family: 'Roboto';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 9px;
+                            line-height: 11px;
+                            color: #C4C4C4;
+                        }
+                        &_cm {
+                            font-family: 'Roboto';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 12px;
+                            line-height: 11px;
+                            color: #414141;
+                            margin-top: 8px;
+                        }
+                    }
+                }
+            }
+            &_love {
+                position: absolute;
+                top: 0;
+                right: 0px;
+                cursor: pointer;
+                font-size: 30px;
+                color: gray;
+                &_active {
+                    color: red;
+                }
+            }
+            &_image {
+                margin-top: 30px;
+            }
+            &_text {
+                &_name {
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: #414141;
+                    margin-top: 54px;
+                }
+                &_subtitle {
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 11px;
+                    line-height: 13px;
+                    color: #414141;
+                    margin-top: 6px;
+                }
+                &_price {
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: #414141;
+                    margin-top: 9px;
+                }
+            }
+        }
+    }
+}
+.hits__item_second {
+    &:hover {
+        background: #FFFFFF;
+        z-index: 1000;
+    }
+}
+.hits__item_second .hits__item_block_size {
+    opacity: 0;
+    transition: all .3s;
+    pointer-events: none;
+    position: relative;
+    box-shadow: 0px 1px 9px rgba(0, 0, 0, 0.11);
+    padding-bottom: 30px;
+    padding-left: 15px;
+}
+
+.hits__item_second:hover .hits__item_block_size {
+    opacity: 1;
+    transition: all .3s;
+    z-index: 1000;
+    background: #fff;
+}

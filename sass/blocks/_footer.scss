@@ -1,0 +1,86 @@
+.footer {
+    padding-bottom: 32px;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        &_second {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 32px;
+        }
+    }
+    &__item {
+        &_logo {
+            text-align: right;
+            margin-bottom: 20px;
+        }
+        &_adress {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 126.69%;
+            text-align: right;
+            color: #414141;
+            width: 171px;
+
+        }
+        &_list {
+            display: flex;
+            margin-top: 10px;
+            &_menu {
+                margin: 0 20px;
+                &:first-child {
+                    margin-left: 0;
+                }
+                &_type {
+                    margin: 7px 0;
+                    a {
+                        font-family: 'Roboto';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 126.69%;
+                        color: #414141;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+    &__info {
+        &_links {
+            display: flex;
+            &_link {
+                margin: 0 15px;
+                a {
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 126.69%;
+                    color: #414141;
+                    text-decoration: none;
+                    img {
+                        margin-right: 10px;
+                    }
+                }
+                &_red {
+                    a {
+                        font-family: 'Roboto';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 126.69%;
+                        color: #D74444;
+                        text-decoration: none;
+                    }
+                }
+                &:first-child {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+}

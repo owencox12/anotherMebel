@@ -1,0 +1,65 @@
+.promo {
+    position: relative;
+    &__item {
+        margin-top: 30px;
+        overflow: hidden;
+        &_image {
+            position: relative;
+            img {
+                display: block;
+                margin: 0 auto;
+            }
+            &_text {
+                position: absolute;
+                top: 100px;
+                left: 120px;
+                &_title {
+                    font-family: 'Playfair Display';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 50px;
+                    line-height: 105.3%;
+                    letter-spacing: 0.02em;
+                    text-transform: uppercase;
+                    color: #3C3C3C;
+                    width: 216px;
+                }
+                &_subtitle {
+                    font-family: 'Roboto Condensed';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 140.8%;
+                    letter-spacing: 0.02em;
+                    color: #343434;
+                    margin-top: 15px;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+    &__arrow_right {
+        position: absolute;
+        top: 45%;
+        right: 1%;
+        z-index: 1000;
+        padding: 10px;
+        background: #fff;
+        cursor: pointer;
+        img {
+            width: 25px;
+        }
+    }
+    &__arrow_left {
+        position: absolute;
+        top: 45%;
+        left: 2%;
+        z-index: 1000;
+        padding: 10px;
+        background: #fff;
+        cursor: pointer;
+        img {
+            width: 25px;
+        }
+    }
+}
